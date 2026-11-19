@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react'
 import EarthquakeCard from './EarthquakeCard'
 
-const URL =
-  'https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&minmagnitude=3&minlatitude=35.5&maxlatitude=42.5&minlongitude=25.5&maxlongitude=45&limit=100&orderby=time'
+const URL = `https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&minmagnitude=3&minlatitude=35.5&maxlatitude=42.5&minlongitude=25.5&maxlongitude=45&starttime=${startDate}&limit=200&orderby=time`
 
 function App() {
   const [earthquakes, setEarthquakes] = useState([])
