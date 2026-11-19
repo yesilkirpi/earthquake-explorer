@@ -2,7 +2,7 @@
 
 React app that fetches recent earthquakes from the USGS API and lets you filter them by magnitude.
 
-##Live site 
+## Live site 
 https://earthquake-explorer-lemon.vercel.app/
 ![Earthquake Explorer screenshot](docs/screenshot.png)
 
