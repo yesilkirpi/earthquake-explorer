@@ -5,11 +5,12 @@ function EarthquakeCard(props) {
     } else if (props.magnitude >= 4) {
         level = 'medium'
     }
+
     return (
-        <div className={'card ${level'}>
+        <div className={`card ${level}`}>
             <h2>M{props.magnitude}</h2>
             <p>{props.place}</p>
-            <p>{props.date}</p>
+            <p className="date">{props.date}</p>
         </div>
     )
 }
