@@ -6,7 +6,7 @@ function EarthquakeCard(props) {
         level = 'medium'
     }
     return (
-        <div>
+        <div className={'card ${level'}>
             <h2>M{props.magnitude}</h2>
             <p>{props.place}</p>
             <p>{props.date}</p>
