@@ -1,6 +1,7 @@
 # Earthquake Explorer
 
 React app that fetches recent earthquakes from the USGS API and lets you filter them by magnitude.
+![Earthquake Explorer screenshot](docs/screenshot.png)
 
 ## Features
 
