@@ -1,6 +1,10 @@
 import { useState, useEffect } from 'react'
 import EarthquakeCard from './EarthquakeCard'
 
+const start = new Date()
+start.setFullYear(start.getFullYear() - 1)
+const startDate = start.toISOString().slice(0, 10)
+
 const URL = `https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&minmagnitude=3&minlatitude=35.5&maxlatitude=42.5&minlongitude=25.5&maxlongitude=45&starttime=${startDate}&limit=200&orderby=time`
 
 function App() {
